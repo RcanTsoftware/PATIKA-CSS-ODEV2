@@ -1,0 +1,60 @@
+/*---------Form block etiket olarak ayarlanı ve margin değerleri belirtildi--------------------------------- */
+form {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+}
+
+/*--------- Center block etiket olarak ayarlanı ve text konumu belirtildi--------------------------------- */
+center {
+    display: block;
+    text-align: -webkit-center;
+}
+
+/*---------Fotoğrafın kutuya sığmaması durumunda yapılacaklar belirtildi----------------------------------- */
+center > img {
+    overflow-clip-margin: content-box;
+    overflow: clip ;
+}
+
+/*-----------Arama kutusu düzenlendi------------------------------------------------------------------------*/
+table {
+
+    display: table;
+
+    /* Kenarlığın nasıl görüneceği belirtildi. */
+    border-collapse: separate;
+
+    /* Tablonun kapladığı alan belirtildi */
+    box-sizing: border-box;
+
+    /* Metnin ilk satırının girinti miktarı belirlendi. */
+    text-indent: initial;
+
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    border-color: gray;
+    font-variant: normal;
+}
+
+/* Tablonun Gövde görünümü belirlendi. */
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+/* Tablo satır görünümleri belirlendi. */
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
